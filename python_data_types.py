@@ -31,7 +31,6 @@ date = '2018-11-01' # exercise 2
 my_hobbies = ['fitness', 'tea', 'driving', 'running']
 print (my_hobbies[0])
 print (my_hobbies[-1])
-deleat 
 del my_hobbies[-1]
 
 # task on page 38
