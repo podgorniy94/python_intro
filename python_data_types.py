@@ -64,6 +64,7 @@ print (alphabet.difference(zen))
 # task on page 50
 d = {'payton':'An interpreted, object-oriented programming language'} # exercise 1
 d['python'] = d['payton']
+del d['payton']
 print (d)
 contacts = {('Ryan', 'Gosling'):'+1-257-530-202'} # exercise 2
 
