@@ -19,7 +19,7 @@ print (up[:3].upper()+up[3:])
 print(7+3*2) # The multiplication is performed first, and then the addition.
 print('7' + str(3*2)) # Product in brackets converted into a string and concatenated with another string.
 print('7' + '3*2') # Adding strings because they aren't numbers.
-print('7' + 3*2) # A string can only concatenate to a string but not an integer.
+# print('7' + 3*2) A string can only concatenate to a string but not an integer.
 
 # task on page 31
 hobby = 'fitness' # exercise 1
