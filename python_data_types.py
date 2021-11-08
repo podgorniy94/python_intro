@@ -24,8 +24,9 @@ print('7' + 3*2) # A string can only concatenate to a string but not an integer.
 # task on page 31
 hobby = 'fitness' # exercise 1
 'My hobby is {}.'.format(hobby)
-date = '2018-11-01' # exercise 2
-{:.7}.format(date)
+import datetime # exercise 2
+date = datetime.datetime(2018, 11, 1) 
+print ('{:%m/%d}'.format(date))
 
 # task on page 37
 my_hobbies = ['fitness', 'tea', 'driving', 'running']
