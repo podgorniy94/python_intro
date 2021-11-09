@@ -29,7 +29,7 @@ date = datetime.datetime(2018, 11, 1)
 print ('{:%m/%d}'.format(date))
 
 # task on page 37
-my_hobbies = ['fitness', 'tea', 'driving', 'walking']
+my_hobbies = ['fitness', 'tea', 'driving', 'running']
 print (my_hobbies[0])
 print (my_hobbies[-1])
 del my_hobbies[-1]
