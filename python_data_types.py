@@ -1,5 +1,5 @@
 # task on page 10
-print (1256983%28) 
+print (1256983%28)
 
 # task on page 16
 print (12**52/15>8 or 3**5>100) # exercise 1
@@ -25,7 +25,7 @@ print('7' + '3*2') # Adding strings because they aren't numbers.
 hobby = 'fitness' # exercise 1
 'My hobby is {}.'.format(hobby)
 import datetime # exercise 2
-date = datetime.datetime(2018, 11, 1) 
+date = datetime.datetime(2018, 11, 1)
 print ('{:%m/%d}'.format(date))
 
 # task on page 37
