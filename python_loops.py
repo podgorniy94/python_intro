@@ -4,6 +4,6 @@ names_list = ['Jiri', 'Jan', 'Marie', 'Petr', 'Jana', 'Josef','Pavel', 'Martin',
 name = input('Type your name ')
 
 if  (name in names_list) == True:
-  print('Indetification passed')
+    print('Indetification passed')
 else:
-  print('Indetification failed')
+    print('Indetification failed')
