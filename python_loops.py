@@ -1,5 +1,4 @@
 # Exercie on page 12 (Seznamy)
-
 names_list = ['Jiri', 'Jan', 'Marie', 'Petr', 'Jana', 'Josef','Pavel', 'Martin', 'Jaroslav', 'Tomas', 'Eva', 'Miroslav', 'Hana', 'Anna', 'Zdenek', 'Frantisek', 'Vaclav', 'Michal', 'Lenka', 'Katerina']
 name = input('Type your name ')
 
@@ -25,11 +24,11 @@ transpose = [[row[i] for row in matrix] for i in range(len(matrix))]
 for lst in transpose:
         print(lst)
 
+# Exercise on page 25 (Nákupní seznam)
 items = ['Diapers', 'Peanuts','Butter', 'Cheese', 'Milk', 'Yogurt', 'Eggs','Bread', 'Shrimp', 'Coffee']
 item = input('What item do you need? ')
 item = item.capitalize()
 
-# Exercise on page 25 (Nákupní seznam)
 for i, search in enumerate(items):
     if search == item:
         print(item + ' is already on the list')
