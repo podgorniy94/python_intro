@@ -24,3 +24,17 @@ matrix = [[1,2,3], [4,5,6], [7,8,9]]
 transpose = [[row[i] for row in matrix] for i in range(len(matrix))]
 for lst in transpose:
         print(lst)
+
+items = ['Diapers', 'Peanuts','Butter', 'Cheese', 'Milk', 'Yogurt', 'Eggs','Bread', 'Shrimp', 'Coffee']
+item = input('What item do you need? ')
+item = item.capitalize()
+
+# Exercise on page 25 (Nákupní seznam)
+for i, search in enumerate(items):
+    if search == item:
+        print(item + ' is already on the list')
+        break
+    if i == len(items) - 1:
+        items.append(item)
+        print(items)
+        break
