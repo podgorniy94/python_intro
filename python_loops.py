@@ -52,3 +52,7 @@ seq = 'ACTGCTCAAG'
 no_enum = [i for i in range(len(seq)) if seq[i] == 'A']
 print(no_enum)
 
+# Exercise on page 31 (Slovníky)
+scores = {'John' : 10, 'Emily' : 35, 'Matthew' : 50}
+new_scores = {name: value*3 for (name, value) in scores.items()}
+print(new_scores)
