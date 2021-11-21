@@ -7,13 +7,13 @@ print(division())
 
 # exercise 2
 def lst_sum():
-    '''I had to look for tips on how to get input separated by spaces. I chose the string split () method.'''
+    '''I had to look for tips on how to get input separated by spaces. I chose the string .split() method.'''
     lst_num = [int(elements) for elements in input('Type list of numbers separated by space: ').split()]
     total = 0
     for num in lst_num:
         total += num
-    print(total)
-lst_sum()
+    return total
+print(lst_sum())
 
 # Lambda funkce (12)
 compare_list = (lambda lst: print('small list') if len(lst) <= 5 else print('big list'))
@@ -27,14 +27,14 @@ def string_upper_lower(s):
     s
     low = 0
     up = 0
-   for symbol in s:
+    for symbol in s:
         if symbol >= 'a' and symbol <='z':
             low += 1
         elif symbol >= 'A' and symbol <='Z':
             up += 1
     low = '\nLowercase letters: ' + str(low)
     up = '\nUppercase letters: ' + str(up)
-    return(print(s, low, up))
+    return print(s, low, up)
 
 string_upper_lower(s)
 
@@ -50,3 +50,12 @@ def meal_vouchers(lunch, voucher):
         return pay_cash, pay_voucher
 
 meal_vouchers(int(input('Lunch cost: ')), int(input('Meal voucher value: ' )))
+
+# Rekurzivni funkce (24)
+# I had to do a little research to understand how recursion works
+def compute_factorial(n):
+    if n <= 0:
+        return 1
+    return n * compute_factorial(n-1)
+
+print(compute_factorial(int(input('Factorial of a number '))))
