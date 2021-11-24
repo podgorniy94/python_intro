@@ -32,10 +32,9 @@ for i, search in enumerate(items):
     if search == item:
         print(item + ' is already on the list')
         break
-    if i == len(items) - 1:
-        items.append(item)
+    if i+1 == len(items):
+        items = items + [item]
         print(items)
-        break
 
 # Exercise on page 28 (List comprehension)
 numbers = range(5,10)
@@ -45,8 +44,8 @@ print(exp), print(fav)
 
 # Exercise on page 29 (GATTACA)
 seq = 'ACTGCTCAAG'
-inlist = [i for i, x in enumerate(seq) if x == 'A']
-print(inlist)
+in_list = [i for i, x in enumerate(seq) if x == 'A']
+print(in_list)
 # The second solution
 seq = 'ACTGCTCAAG'
 no_enum = [i for i in range(len(seq)) if seq[i] == 'A']
