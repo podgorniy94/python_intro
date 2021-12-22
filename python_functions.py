@@ -58,9 +58,12 @@ meal_vouchers(int(input('Lunch cost: ')), int(input('Meal voucher value: ')))
 
 # Rekurzivni funkce (24)
 def compute_factorial(n):
-    if n <= 0:
-        return 1
-    return n * compute_factorial(n-1)
+  if n < 0:
+    s = 'The factorial is only defined for non-negative integers.'
+    return s
+  elif n == 0:
+    return 1
+  return n * compute_factorial(n-1)
 
 
 print(compute_factorial(int(input('Factorial of a number: '))))
