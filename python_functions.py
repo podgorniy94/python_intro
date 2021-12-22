@@ -1,9 +1,9 @@
 # 2 cviceni na zaklady funkci(8) 
 # exercise 1
-def division():
-    div = 22/7
-    return div
-print(division())
+def division(a, b):
+    return a/b
+
+print(division(27, 7))
 
 # exercise 2
 def lst_sum():
@@ -13,11 +13,13 @@ def lst_sum():
     for num in lst_num:
         total += num
     return total
+
+
 print(lst_sum())
 
 # Lambda funkce (12)
 compare_list = (lambda lst: print('small list') if len(lst) <= 5 else print('big list'))
-compare_list([int(nmbrs) for nmbrs in input('Type list of numbers separated by space ').split()])
+compare_list([int(nmbrs) for nmbrs in input('Type list of numbers separated by space: ').split()])
 
 # Funkce s jednim parametrem (21)
 s = '''Peter Piper picked a peck of pickled peppers. A peck of pickled peppers Peter Piper picked.
@@ -28,13 +30,14 @@ def string_upper_lower(s):
     low = 0
     up = 0
     for symbol in s:
-        if symbol >= 'a' and symbol <='z':
+        if symbol.islower():
             low += 1
-        elif symbol >= 'A' and symbol <='Z':
+        elif symbol.isupper():
             up += 1
     low = '\nLowercase letters: ' + str(low)
     up = '\nUppercase letters: ' + str(up)
     return print(s, low, up)
+
 
 string_upper_lower(s)
 
@@ -42,20 +45,22 @@ string_upper_lower(s)
 def meal_vouchers(lunch, voucher):
     lunch
     voucher
-    if voucher == 0:
-        return print("You don't have vouchers: " + str(voucher) + ' pcs')
+
+    if voucher == False:
+        print('Impossible value of voucher')
     else:
         pay_cash = print('Pay in cash: ' + str(lunch % voucher))
         pay_voucher = print('Pay in meal vouchers: ' + str(lunch // voucher) + ' pcs, ' + str(voucher) + ' CZK each')
         return pay_cash, pay_voucher
 
-meal_vouchers(int(input('Lunch cost: ')), int(input('Meal voucher value: ' )))
+
+meal_vouchers(int(input('Lunch cost: ')), int(input('Meal voucher value: ')))
 
 # Rekurzivni funkce (24)
-# I had to do a little research to understand how recursion works
 def compute_factorial(n):
     if n <= 0:
         return 1
     return n * compute_factorial(n-1)
 
-print(compute_factorial(int(input('Factorial of a number '))))
+
+print(compute_factorial(int(input('Factorial of a number: '))))
