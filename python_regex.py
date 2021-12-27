@@ -18,11 +18,9 @@ def type_name(name):
   dig_match = re.findall(r'[\d]+', name)
 
   if low_match:
-    print('Try again, the name must start only with a capital letter.')
-    type_name(input())
+      type_name(input('Try again, the name must start only with a capital letter:\n'))
   if dig_match:
-   print('Try again, the name can contain only letters')
-   type_name(input())
+      type_name(input('Try again, the name can contain only letters:\n'))
   if not low_match and not dig_match:
     return(print('Identification passed'))
 
