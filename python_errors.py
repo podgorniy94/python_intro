@@ -33,7 +33,6 @@ def sec_value(a, b):
       break
     except ValueError:
       b = input('The value must be an integer, try again: ')
-
   try:
     print('The result = ', a/b)
   except ZeroDivisionError:
