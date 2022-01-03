@@ -21,3 +21,6 @@ def sec_value(a, b):
   except ZeroDivisionError:
     b = input('Division by zero is not possible, try again: ')
     sec_value(a, b)
+
+if __name__ == '__main__':
+    divide_two_numbers()
