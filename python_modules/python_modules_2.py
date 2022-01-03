@@ -1,12 +1,6 @@
+# Použití Argparse (23) 
 import argparse
-import sys
 import string
-
-sys.path.append('/mnt/c/Users/podgo/Desktop/python_intro/python_modules')
-import divide_two_numbers as dtn
-
-dtn.divide_two_numbers()
-
 parser = argparse.ArgumentParser()
 
 parser.add_argument('string', help='The string in which letters are supposed to be counted')
@@ -21,10 +15,11 @@ lst  = list(args.string)
 up_vowels = []
 for i in range(len(vowels)):
     up_vowels.append(vowels[i].upper())
-    consonants = []
-    for i in alphabet:
-        if i not in vowels and i not in up_vowels:
-            consonants.append(i)
+
+consonants = []
+for i in alphabet:
+    if i not in vowels and i not in up_vowels:
+        consonants.append(i)
 
 def count_letters(var):
     for i in var:
@@ -38,3 +33,5 @@ elif args.consonants:
     count_letters(consonants)
 else:
     count_letters(alphabet)
+
+
