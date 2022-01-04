@@ -52,5 +52,6 @@ def update_output(n_clicks, day, time):
         and entered time is "{}"
      '''.format(n_clicks, day, time)
 
+
 if __name__ == '__main__':
         app.run_server(debug=True)
