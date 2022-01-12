@@ -21,17 +21,15 @@ for i in alphabet:
     if i not in vowels and i not in up_vowels:
         consonants.append(i)
 
-def count_letters(var):
+def count_letters(var, p_lst):
     for i in var:
-        if i in lst:
-            print(i, ' ',  lst.count(i))
+        if i in p_lst:
+            print(i, ' ',  p_lst.count(i))
     return
 
 if args.vowels:
-    count_letters(vowels)
+    count_letters(vowels, lst)
 elif args.consonants:
-    count_letters(consonants)
+    count_letters(consonants, lst)
 else:
-    count_letters(alphabet)
-
-
+    count_letters(alphabet, lst)
