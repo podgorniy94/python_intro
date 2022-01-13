@@ -26,7 +26,6 @@ s = '''Peter Piper picked a peck of pickled peppers. A peck of pickled peppers P
 If Peter Piper picked a peck of pickled peppers, where’s the peck of pickled peppers Peter Piper picked?'''
 
 def string_upper_lower(s):
-    s
     low = 0
     up = 0
     for symbol in s:
@@ -43,7 +42,6 @@ string_upper_lower(s)
 
 # Funkce s dvema parametry (22)
 def meal_vouchers(l_cost, v_value):
-
     if v_value == False:
         print('Impossible value of voucher')
     else:
