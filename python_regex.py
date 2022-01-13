@@ -14,14 +14,14 @@ Exercise Zen of Python (18)
 import re
 
 def type_name(name):
-  low_match = re.findall(r'\b([a-z]\w*)\b', name)
-  dig_match = re.findall(r'[\d]+', name)
+  cap_match = re.findall(r'\b([A-Z]\w*)\b', name)
+  let_match = re.findall(r'[A-Za-z]+', name)
 
-  if low_match:
+  if not cap_match:
       type_name(input('Try again, the name must start only with a capital letter:\n'))
-  if dig_match:
+  if not let_match:
       type_name(input('Try again, the name can contain only letters:\n'))
-  if not low_match and not dig_match:
+  if not cap_match and not let_match:
     return(print('Identification passed'))
 
 
@@ -32,7 +32,7 @@ type_name(input('Enter your name: '))
 import re
 
 def only_digits(st):
-  digits = re.sub(r'[^\d]', '', st)
+  digits = re.sub(r'[\D]', '', st)
   if digits:
     print(digits)
     return
