@@ -10,7 +10,7 @@ for number in range(10):
         message = 'a'
         print(message)
     else:
-        message = "b"
+        message = 'b'
         print(message)
 
 
