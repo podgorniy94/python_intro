@@ -42,15 +42,13 @@ def string_upper_lower(s):
 string_upper_lower(s)
 
 # Funkce s dvema parametry (22)
-def meal_vouchers(lunch, voucher):
-    lunch
-    voucher
+def meal_vouchers(l_cost, v_value):
 
-    if voucher == False:
+    if v_value == False:
         print('Impossible value of voucher')
     else:
-        pay_cash = print('Pay in cash: ' + str(lunch % voucher))
-        pay_voucher = print('Pay in meal vouchers: ' + str(lunch // voucher) + ' pcs, ' + str(voucher) + ' CZK each')
+        pay_cash = print('Pay in cash: ' + str(l_cost % v_value))
+        pay_voucher = print('Pay in meal vouchers: ' + str(l_cost // v_value) + ' pcs, ' + str(v_value) + ' CZK each')
         return pay_cash, pay_voucher
 
 
