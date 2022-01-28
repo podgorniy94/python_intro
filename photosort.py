@@ -13,7 +13,6 @@ import webbrowser
 import ipdb
 
 def get_location(latlng):
-    r = requests.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=' + latlng + '&key=AIzaSyC2UZo_zEagrroWOroCwgPeBGcA5oW2OY4')
     p = re.compile(r'formatted_address" : (.+)')
 
     return re.search(p, r.text).group(1)
